@@ -7,9 +7,8 @@ html {
 body {
   background: #eeeeee;
   color: #252525;
-  margin-left: 16%;
-  margin-right: 16%;
-  padding:2%;
+  margin: 0px 16% 0px 16%;
+  padding: 0% 2%;
   font-family: malgun gothic, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   margin-top: 2%;
