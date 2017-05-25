@@ -1,9 +1,8 @@
 html {
   padding: 0px;
   margin: 0px;
-  background: #d54040;
-  width: auto;
-  height: auto;
+  background: #ececec;
+  /*background: #d54040;*/
 }
 
 body {
@@ -13,7 +12,4 @@ body {
   padding: 0% 2%;
   font-family: malgun gothic, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
-  margin-top: 2%;
-  width: auto;
-  height: auto;
 }
