@@ -1,15 +1,14 @@
 html {
   padding: 0px;
   margin: 0px;
-  background: #ececec;
-  /*background: #d54040;*/
+  background: #d54040;
 }
 
 body {
   background: #eeeeee;
   color: #252525;
   margin: 0px 16% 0px 16%;
-  padding: 0% 2%;
+  padding: 2%;
   font-family: malgun gothic, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   height: 100%;
