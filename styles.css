@@ -1,0 +1,10 @@
+html {
+ padding: 0;
+ margin: 0;
+}
+
+body {
+  background: #eeeeee;
+  font-color: #252525;
+  width: 70%;
+}
