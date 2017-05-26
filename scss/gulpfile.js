@@ -41,10 +41,9 @@ gulp.task('watch',function() {
 //Default, prints list of commands and what they do
 gulp.task('default',function() {
   gutil.log('\n',
-    'Source code for the ajitvpai.com project.\n',
+    'Source code for the ajitvpai.com project.',
     'List of commands for this project and what they do:\n',
-    '   gulp watch        watches the input directory for any changes and runs -all- of the below sass tasks when any changes occur.\n',
-    '   gulp sass         collects and compiles all css files.\n',
-    '   gulp htl          collects and compiles all html files.\n'
+    '   gulp watch        watches the src directory for any changes and runs gulp sass when any changes occur.\n',
+    '   gulp sass         collects and compiles all css files.\n'
   );
 });
