@@ -1,0 +1,92 @@
+@import "normalize";
+@import "susy";
+$space: 10px;
+$susy: ( columns: 12, gutters: 0, math: fluid, output: float, last-flow: to, gutter-position: inside, global-box-sizing: border-box, );
+$breakpoint-1: 320px - $space;
+$breakpoint-2: 640px - $space;
+$breakpoint-3: 1000px - $space;
+$breakpoint-4: 1440px - $space;
+$breakpoint-5: 1920px - $space;
+$freedom-red: #B22234;
+$patriot-blue: #3C3B6E;
+$dark: #111;
+$light: #ddd;
+$header-font: 'Montserrat', sans-serif;
+$body-font: 'Open Sans', sans-serif;
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
+  font-family: $body-font;
+  font-weight: 400;
+}
+
+*,
+a,
+article,
+div,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+section,
+select,
+span,
+textarea {
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 20px;
+  font-family: $header-font;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+  color: $patriot-blue;
+  @include susy-media ($breakpoint-2) {
+    font-size: 30px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+p,
+ul {
+  word-wrap: break-word;
+  color: $dark;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+  @include susy-media ($breakpoint-2) {
+    font-size: 18px;
+    text-align: justify;
+  }
+
+  a {
+    color: $freedom-red;
+    font-weight: 600;
+  }
+}
+
+ul{
+  padding-left: 1.1em;
+}
