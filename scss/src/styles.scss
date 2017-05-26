@@ -1,0 +1,130 @@
+@import "global";
+
+header {
+  overflow: hidden;
+  border-top: 0 !important;
+
+  img {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  > div {
+    @include container ($breakpoint-4);
+    padding: 0 $space*2;
+    position: relative;
+    z-index: 2;
+
+    h1 {
+      margin-top: $space*2;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: black;
+
+      mark {
+        font-size: 30px;
+        background: transparent;
+        display: block;
+        color: $patriot-blue;
+      }
+
+      span {
+        color: $freedom-red;
+      }
+
+      @include susy-media ($breakpoint-2){
+        font-weight: 400;
+        margin-top: -42px;
+        font-weight: 400;
+        font-size: 30px;
+
+        mark {
+          font-size: 50px;
+          color: white;
+        }
+      }
+
+      @include susy-media ($breakpoint-3){
+        margin-top: -77px;
+        font-size: 55px;
+
+        mark {
+          font-size: 90px;
+        }
+      }
+    }
+  }
+}
+
+section {
+  border-top: 1px solid white;
+  padding: $space*4 $space;
+
+  @include susy-media ($breakpoint-2){
+    padding: $space*6 $space;
+  }
+
+  > div {
+    @include container ($breakpoint-4);
+
+    > div {
+      padding: 0 $space;
+      @include span (1 of 1);
+    }
+  }
+}
+
+.theme {
+  &-light {
+    background: $light;
+  }
+
+  &-dark {
+    background: $dark;
+
+    h1, h2, h3, h4, h5, h6{
+      color: $freedom-red;
+    }
+
+    p, ul, li{
+      color: white;
+
+      a{
+        color: $freedom-red;
+      }
+    }
+  }
+
+  &-red {
+    background: $freedom-red;
+
+    h1, h2, h3, h4, h5, h6{
+      color: white;
+    }
+
+    p, ul, li{
+      color: white;
+
+      a{
+        color: lighten($freedom-red, 35%);
+      }
+    }
+  }
+
+  &-blue {
+    background: $patriot-blue;
+
+    h1, h2, h3, h4, h5, h6{
+      color: white;
+    }
+
+    p, ul, li{
+      color: white;
+
+      a{
+        color: lighten($patriot-blue, 35%);
+      }
+    }
+  }
+}

@@ -2,11 +2,12 @@
 var gulp = require('gulp');
 var del = require('del');
 var gutil = require('gulp-util');
+var rename = require('gulp-rename');
 
 //Preprocessing Plugins
 var sass = require('gulp-sass');
 var preprocess = require('gulp-preprocess');
-var sassvariables = {outputStyle: 'expanded' , includePaths:['../node_modules/susy/sass']};
+var sassvariables = {outputStyle: 'expanded' , includePaths:['node_modules/susy/sass']};
 
 //Postprocessing Plugins
 var postcss = require('gulp-postcss');
@@ -15,7 +16,7 @@ var cssnano = require('cssnano');
 var mediaqueries = require('gulp-group-css-media-queries');
 
 //Directory
-var input = "/";
+var input = "src";
 var output ="../";
 
 gulp.task('sass', function() {
@@ -29,8 +30,8 @@ gulp.task('sass', function() {
           autoprefixer({browsers: ['last 5 versions', '> 5%']}),
           cssnano({zindex: false}),
         ]))
+        .pipe(rename({dirname: ''}))
         .pipe(gulp.dest(output))
-        .pipe(gulp.dest(outputRemote))
 });
 
 gulp.task('watch',function() {
