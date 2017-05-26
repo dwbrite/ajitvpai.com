@@ -1,4 +1,4 @@
-This repo contain the contents served at the website https://ajitvpai.com/
+This repo contain the contents served at the website http://ajitvpai.com/
 
 This site was initially created by [/u/Hdmoney] inspired by a Reddit [comment thread], with major development by [/u/DistortoiseLP], and hosting provided by [/u/Sunsparc]
 in [/r/pcmasterrace].
