@@ -29,7 +29,13 @@ After forking the repo, cd into the `scss` folder and run
 ```
 $ npm install
 ```
+Any changes to the HTML can be made in `index.html`.
+
+If you are editing CSS, you can run the `gulp watch` command in the `/scss` folder. Edit `./scss/src/styles.scss` to your liking.
+
+
 If you want to see your changes on a local dev environment, you can use the python SimpleHTTPServer module. Run the following command in the root directory:
 ```
 $ python -m SimpleHTTPServer
 ```
+In your browser, head to `localhost:8000` to see your changes.
