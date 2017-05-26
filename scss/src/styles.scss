@@ -73,6 +73,10 @@ section {
       @include span (1 of 1);
     }
   }
+
+  img {
+    width: 100%;
+  }
 }
 
 .theme {
@@ -125,6 +129,14 @@ section {
       a{
         color: lighten($patriot-blue, 35%);
       }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  section {
+    img {
+      width: auto;
     }
   }
 }
