@@ -11,7 +11,7 @@ header {
   }
 
   > div {
-    @include container ($breakpoint-4);
+    @include container ($breakpoint-3);
     padding: 0 $space*2;
     position: relative;
     z-index: 2;
@@ -47,7 +47,7 @@ header {
 
       @include susy-media ($breakpoint-3){
         margin-top: -77px;
-        font-size: 55px;
+        font-size: 45px;
 
         mark {
           font-size: 90px;
@@ -66,7 +66,7 @@ section {
   }
 
   > div {
-    @include container ($breakpoint-4);
+    @include container ($breakpoint-3);
 
     > div {
       padding: 0 $space;
