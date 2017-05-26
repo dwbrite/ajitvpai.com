@@ -1,6 +1,3 @@
-ajitvpai.com
-============
-
 This repo contain the contents served at the website https://ajitvpai.com/
 
 This site was created by [/u/Hdmoney] inspired by a Reddit [comment thread]
