@@ -38,4 +38,9 @@ If you want to see your changes on a local dev environment, you can use the pyth
 ```
 $ python -m SimpleHTTPServer
 ```
+
+If you are using python 3 on a windows machine, please try using the code below if the code above does not work.
+```
+$ python -m http.server [port]
+```
 In your browser, head to `localhost:8000` to see your changes.
